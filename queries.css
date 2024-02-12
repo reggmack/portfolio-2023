@@ -1,0 +1,349 @@
+/* ========
+   TABLET 
+   ======== */
+@media only screen and (max-width: 992px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1.5fr .75fr .75fr .75fr .75fr .75fr .5fr;
+
+        grid-template-areas: 
+            "header"
+            "bio"
+            "spotlight-left"
+            "spotlight-right"
+            "spotlight"
+            "spotlight2"
+            "spotlight3"
+            "footer";
+    }
+
+    .grid-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1.5fr 1fr .5fr;
+
+        grid-template-areas: 
+            "header"
+            "bio"
+            "spotlight-list"
+            "footer";
+    }
+
+    .grid-certs {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr .5fr;
+    
+        grid-template-areas: 
+        "header"
+        "spotlight-list"
+        "footer";
+    }
+
+    .btn-contact-me {
+        padding: 10px 10px;
+        width: 100px;
+    }
+
+    .spotlight-container {
+        flex-wrap: wrap;
+    }
+
+    .job-container {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: 90%;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin-top: 205px;
+        z-index: 99999;
+        width: 100%;
+    }
+
+    ul#nav-links {
+        display: none;
+    }
+
+    .nav-links {
+        font-size: 1.25em;
+        font-weight: 400;
+        padding: 0 13px;
+
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid gainsboro;
+        padding: 7px 0;
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header-box {
+        width: 98%;
+    }
+
+    .main-logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    #main-logo {
+        margin-right: 1.25em;
+    }
+
+    .main-blurb {
+        position: relative;
+        left: 0;
+        top: 0;
+        align-self: center;
+        width: 85%;
+        padding: 0;
+        margin: 14px 0 0 0;
+    }
+
+    .about-blurb {
+        position: relative;
+        left: 0;
+        top: 0;
+        align-self: center;
+        width: 85%;
+        padding: 0;
+        margin: 14px 0 0 0;
+    }
+
+    .job-img, .job-img-parallon, .job-img-jha, .job-img-aha, .job-img-480, .job-img-dhs, .job-img-cpacc, .job-img-hilton {
+        order: 0;
+        flex-basis: 17%;
+        height: 8em;
+    }
+
+    .job-info {
+        order: 1;
+        flex-basis: 100%;
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    .right-img {
+        order: 0;
+        flex-basis: 100%;
+        height: 220px;
+    }
+    
+    .left-info {
+        order: 1;
+        flex-basis: 100%;
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    .spotlight-left-box {
+        flex-wrap: wrap;
+    }
+
+    .left-img {
+        order: 0;
+        flex-basis: 100%;
+        height: 220px;
+    }
+    
+    .right-info {
+        order: 1;
+        flex-basis: 100%;
+        padding: 0px;
+        margin-top: 10px;
+    }
+
+    .spotlight-right-box {
+        flex-wrap: wrap;
+    }
+
+    .main-box {
+        background-image: url('img/regg-main-banner-center.jpg');
+        background-position: center;   
+    }
+
+    .about-box {
+        background-image: url('img/regg-about-banner-center.jpg');
+        background-position: center;   
+    }
+
+    .spotlight-box {
+       flex-direction: column;
+    }
+
+    .spot-1, .spot-2 {
+        width: 100%;
+        margin-bottom: 5em;
+        border-bottom: 1px dotted darkgray;
+        padding-bottom: 14px;
+    }
+
+    .spot-img3, .spot-img2, .spot-img1, .right-img, .left-img {
+        background-size: cover;
+        background-position: center top;
+        min-height: 200px;
+    }
+
+    .spotlight-jobs {
+        margin-bottom: 2em;
+    }
+
+    .wcag-img, .ux-img, .html-img, .design-img {
+        background-size: cover;
+        background-position: center;
+        min-height: 200px;
+    }
+
+    .job-img, .job-img-parallon, .job-img-jha, .job-img-aha, .job-img-avid, .job-img-480, .job-img-dhs, .job-img-cpacc, .job-img-hilton {
+        background-size: contain; 
+    }
+
+    .footer-box {
+        align-items: center;
+    }
+
+    li.footer-nav-links:first-child {
+        padding: 0px 44px;
+    }
+
+    .footer-nav-links {
+       padding: 0 28px;
+    }
+
+    .address {
+        flex-direction: column;
+        align-items: center;
+        line-height: 24px;
+        margin-top: 5px;
+    }
+
+    .social-links {
+        order: 3;
+        margin-top: 14px;
+    }
+
+    .footer-nav ul {
+        margin-bottom: 15px;
+    }
+
+    .spotlight-left-box, .spotlight-right-box {
+        border-bottom: 1px dotted darkgray;
+        padding-bottom: 14px;
+    }
+
+}
+
+
+
+
+/* ========
+   MOBILE 
+   ======== */
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr .75fr .75fr .75fr .75fr .75fr .25fr;
+
+        grid-template-areas: 
+            "header"
+            "bio"
+            "spotlight-left"
+            "spotlight-right"
+            "spotlight"
+            "spotlight2"
+            "spotlight3"
+            "footer";
+    }
+
+    .grid-about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 1fr .25fr;
+
+        grid-template-areas: 
+            "header"
+            "bio"
+            "spotlight-list"
+            "footer";
+    }
+
+    .grid-certs {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr .25fr;
+
+        grid-template-areas: 
+            "header"
+            "spotlight-list"
+            "footer";
+    }
+
+    nav {
+        width: 70%;
+    }
+
+    #main-logo {
+        margin-right: 1em;
+    }
+
+    #footer-nav-links {
+        flex-direction: column;
+    }
+
+    .footer-box {
+        align-items: start ;
+    }
+
+    li.footer-nav-links:first-child,
+    li.footer-nav-links {
+        padding: 14px 0px;
+    }
+
+    .footer-nav ul {
+        align-items: start;
+        margin-bottom: 2px;
+    }
+
+    .address {
+        align-items: start;
+        margin-top: 0 !important;
+        flex-direction: column;
+    }
+
+    .address-info li {
+        border-right: none;
+    }
+
+    .address-info {
+        flex-direction: column;
+    }
+
+    .copy-logo {
+        order: 2;
+        margin-left: 4px;
+        margin-right: 0;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .job-img, .job-img-parallon, .job-img-jha, .job-img-aha, .job-img-avid, .job-img-480, .job-img-dhs, .job-img-cpacc, .job-img-hilton {
+        height: 5em;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 340px) {
+    .btn-contact-me {
+        font-size: x-small;
+    }
+}
